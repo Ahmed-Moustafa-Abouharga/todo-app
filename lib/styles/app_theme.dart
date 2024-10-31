@@ -3,7 +3,13 @@ import 'package:todo_app/styles/app_colors.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
-    textTheme: const TextTheme(
+    appBarTheme: AppBarTheme(
+      iconTheme: IconThemeData(
+        color: Colors.white,
+
+      )
+    ),
+    textTheme:const TextTheme(
       titleMedium: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.bold,

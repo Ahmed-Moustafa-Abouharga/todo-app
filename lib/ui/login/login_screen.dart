@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/components/custom_elevated_button.dart';
 import 'package:todo_app/components/custom_text_form_field.dart';
+import 'package:todo_app/ui/register/register_screen.dart';
 
 import '../../constants.dart';
 
@@ -74,7 +75,10 @@ class LoginScreen extends StatelessWidget {
                   CustomElevatedButton(text: "Login", onClicked: ()
                   {
                     login();
-                  })
+                  }),
+                  TextButton(onPressed: (){
+                    Navigator.pushNamed(context, RegisterScreen.routeName); 
+                  }, child: Text("or create a new account"))
                 ],
               ),
             ),
